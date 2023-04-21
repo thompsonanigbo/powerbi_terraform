@@ -3,23 +3,22 @@
 #create key pairs from EC2.
 I created one named "main-key"
 
-#on terraform, use the provider configuration code to enable terraform to download the plugin to connect to that provider.
-provider "aws" {
+# 1. on terraform, use the provider configuration code to enable terraform to download the plugin to connect to that provider.
+	provider "aws" {
   		region = "us-east-1"
-  		access_key = "AKIA4VCBYGRLI7IP3QSZ"
-  		secret_key = "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"
+  		access_key = "xxxxxxxxxxxxxxxxx"
+  		secret_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 	
-}
+	}
 
 
-# 1. create a VPC
-resource "aws_vpc" "dashboard-vpc" {
-  	cidr_block       = "10.0.0.0/16"
-  
-  	tags = {
-    	Name = "production"
-  	}
-}
+# 2. create a VPC
+	resource "aws_vpc" "dashboard-vpc" {
+  		cidr_block       = "10.0.0.0/16"
+    		tags = {
+    		  Name = "production"
+		 }
+	}
 # 2. create Internet Gateway
 resource "aws_internet_gateway" "igw" {
   	vpc_id = aws_vpc.dashboard-vpc.id
