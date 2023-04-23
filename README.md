@@ -1,7 +1,6 @@
 # powerbi_terraform
 #create an AWS account and create the access keys for a user or root user.
-#create key pairs from EC2.
-I created one named "main-key"
+#create key pairs from EC2 and name it.
 
 # 1. on terraform, use the provider configuration code to enable terraform to download the plugin to connect to that provider.
 	provider "aws" {
