@@ -1,0 +1,19 @@
+# local terraform folders
+**/.terraform/*
+
+# state files
+*.tfstate
+*.tfstate.*
+
+# crash log files
+*.log
+
+# large files detected
+*.terraform/*
+.terraform/*
+
+
+
+
+
+
