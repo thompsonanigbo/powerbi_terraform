@@ -1,0 +1,9 @@
+#TERRAFORM CODE FOR CLOUD-BASED HEALTH DASHBOARD WITH POWER BI
+description
+This project contains the code for the automated implementation of a health dashboard in Amazon web services. The implementation is done using Terraform to provision AWS resources and host Power BI desktop with associated resoucres in AWS cloud.
+
+usage
+to use this code run,
+terraform init
+terraform plan
+terraform apply
