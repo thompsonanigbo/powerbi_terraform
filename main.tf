@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 provider "aws" {
   region     = "us-east-1"
   access_key = "AKIA4VCBYGRLMDTV255Z"
@@ -294,3 +295,6 @@ resource "aws_db_instance_role_association" "example" {
   feature_name           = "S3_INTEGRATION"
   role_arn               = aws_iam_role.rds_role.arn
 }
+=======
+
+>>>>>>> 8f033624740487f997d666a8e4c3032f0c4a6383
