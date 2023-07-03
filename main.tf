@@ -1,8 +1,8 @@
 <<<<<<< HEAD
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIA4VCBYGRLMDTV255Z"
-  secret_key = "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"
+  access_key = "****************"
+  secret_key = "****************"
 }
 
 # 1. create a VPC
